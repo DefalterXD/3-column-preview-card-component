@@ -74,12 +74,7 @@ body {
     font-family: 'Lexend Deca', sans-serif;
     font-weight: 400;
     font-size: 15px;
-    color: hsla(0, 0%, 100%, 0.75);
     max-width: 16ch;
-    background-color: rgba(0, 0, 0, 0);
-    outline-style: solid;
-    border:none;
-    border-color: hsl(0, 0%, 95%);
     border-radius: 25px;
     box-shadow: 0;
     padding: 0.9em 1em;
@@ -87,19 +82,34 @@ body {
     transition-duration: 0.4s;
 }
 /* Hover buttons */
-.learn.sedan_more:hover {
+.learn.sedan_more {
     background-color: hsl(0, 0%, 95%);
     color: hsl(31, 77%, 52%);
+    outline-style: solid;
+    border:none;
 }
 
-.learn.suvs_more:hover {
+.learn.suvs_more {
     background-color: hsl(0, 0%, 95%);
-    color: hsl(184, 100%, 22%);}
+    color: hsl(184, 100%, 22%);
+    outline-style: solid;
+    border:none;
+}
 
-.learn.luxury_more:hover {
+.learn.luxury_more {
     background-color: hsl(0, 0%, 95%);
     color: hsl(179, 100%, 13%);
+    outline-style: solid;
+    border:none;
 }
+.learn:hover {
+    color: hsla(0, 0%, 100%, 0.75);
+    background-color: rgba(0, 0, 0, 0);
+    outline-style: solid;
+    border:none;
+    border-color: hsl(0, 0%, 95%);
+}
+
 /* Footer section */
 footer { 
     font-size: 1rem;
