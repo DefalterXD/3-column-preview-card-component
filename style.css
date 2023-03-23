@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(0, 0%, 95%);
+}
+
+/* Container of cards */
+.card_container {
+    display: flex;
+    /* Without that property border-radius doesn't work because of 
+    flexbox items overflow*/
+    overflow: hidden;
+    border-radius: 6px;
+}
+
+/* Internal content  */
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 30ch;
+    height: 47ch;
+    padding: 3em 3em;
+}
+
+.box img {
+    height: 40px;
+    width: 64px;
+    margin-bottom: 0.5em;
+}
+
+.box h1{
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-weight: 700;
+    color: hsl(0, 0%, 95%);
+}
+
+.box p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 2.8ch;
+}
+
+/* Background of boxes */
+.box.sedan {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.box.suvs {
+    background-color: hsl(184, 100%, 22%);
+} 
+
+.box.luxury {
+    background-color: hsl(179, 100%, 13%);
+}
+
+/* Button properties */
+.learn {
+    text-align: center;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.75);
+    max-width: 16ch;
+    background-color: rgba(0, 0, 0, 0);
+    outline-style: solid;
+    border:none;
+    border-color: hsl(0, 0%, 95%);
+    border-radius: 25px;
+    box-shadow: 0;
+    padding: 0.9em 1em;
+    margin-top: 3em;
+    transition-duration: 0.4s;
+}
+/* Hover buttons */
+.learn.sedan_more:hover {
+    background-color: hsl(0, 0%, 95%);
+    color: hsl(31, 77%, 52%);
+}
+
+.learn.suvs_more:hover {
+    background-color: hsl(0, 0%, 95%);
+    color: hsl(184, 100%, 22%);}
+
+.learn.luxury_more:hover {
+    background-color: hsl(0, 0%, 95%);
+    color: hsl(179, 100%, 13%);
+}
+/* Footer section */
+footer { 
+    font-size: 1rem;
+    text-align: center; 
+}
+footer a { 
+    text-decoration: none;
+    color:hsl(218, 44%, 22%); 
+}
+
+/* Media query */
+@media (max-width: 500px) {
+    .card_container {
+        flex-direction: column;
+    }
+
+    .box p {
+        max-width: 20.7ch;
+    }
+
+    .learn {
+        margin-top: -0.5em;
+    }
+}
