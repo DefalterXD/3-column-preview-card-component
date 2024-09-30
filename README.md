@@ -2,7 +2,7 @@
 
 This is 3 column preview card with using css and flexbox technology. With PC version and Mobile version of the template.
 
-<img src = "https://github.com/user-attachments/assets/d94d22ab-552e-47df-8e32-825598e56fd0" alt = "preview_pc" width = "670px">  
+<img src = "https://github.com/user-attachments/assets/d94d22ab-552e-47df-8e32-825598e56fd0" alt = "preview_pc" width = "685px">  
 
 <img src = "https://github.com/user-attachments/assets/486724d8-0261-46bf-b6fa-e1cb86accf44" alt = "preview_mobile" width = "127px">
 
